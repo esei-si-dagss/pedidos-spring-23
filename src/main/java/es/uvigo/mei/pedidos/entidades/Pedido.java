@@ -48,7 +48,6 @@ public class Pedido implements Serializable {
     public Pedido(Date fecha, Cliente cliente) {
         this.fecha = fecha;
         this.cliente = cliente;
-        this.fecha = Date.from(Instant.now());
         this.estado = EstadoPedido.PENDIENTE;
     }
 
